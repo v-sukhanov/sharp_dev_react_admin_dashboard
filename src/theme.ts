@@ -1,5 +1,6 @@
 import { createContext, useState, useMemo } from "react";
 import { createTheme } from "@mui/material/styles";
+import { Theme } from '@emotion/react';
 
 export type ModeType = 'dark' | 'light'
 
@@ -212,5 +213,5 @@ export const useMode = () => {
 	);
 
 	const theme = useMemo(() => createTheme(themeSettings(mode)), [mode]);
-	return [theme, colorMode];
+	return [theme, colorMode] as [Theme, {toggleColorMode: () => void}];
 };
