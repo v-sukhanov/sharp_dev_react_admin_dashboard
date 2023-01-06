@@ -1,5 +1,6 @@
 import { ColorModeContext, useMode } from './theme';
 import { CssBaseline, ThemeProvider } from '@mui/material';
+import { Topbar } from './scenes/global/Topbar';
 
 
 export const App = () => {
@@ -9,7 +10,9 @@ export const App = () => {
 			<ThemeProvider theme={theme}>
 				<CssBaseline></CssBaseline>
 				<div className="app">
-					App
+					<main className="content">
+						<Topbar/>
+					</main>
 				</div>
 			</ThemeProvider>
 
