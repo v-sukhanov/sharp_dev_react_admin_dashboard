@@ -37,7 +37,7 @@ export const Team = () => {
 			flex: 1,
 		},
 		{
-			field: "accessLevel",
+			field: "access",
 			headerName: "Access Level",
 			flex: 1,
 		},
