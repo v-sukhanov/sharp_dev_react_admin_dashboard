@@ -4,6 +4,7 @@ import { Topbar } from './scenes/global/Topbar';
 import { Route, Routes } from 'react-router-dom';
 import { Dashboard } from './scenes/dashboard';
 import { Sidebar } from './scenes/global/Sidebar';
+import { Team } from './scenes/team/Team';
 
 
 export const App = () => {
@@ -18,6 +19,7 @@ export const App = () => {
 						<Topbar/>
 						<Routes>
 							<Route path="/" element={<Dashboard/>}/>
+							<Route path="/team" element={<Team/>}/>
 						</Routes>
 					</main>
 				</div>
