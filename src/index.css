@@ -27,3 +27,7 @@ html, body, #root, .app, .content {
 ::-webkit-scrollbar-thumb {
     background: #888;
 }
+
+ul {
+    list-style-type: none;
+}
