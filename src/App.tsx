@@ -6,6 +6,7 @@ import { Dashboard } from './scenes/dashboard';
 import { Sidebar } from './scenes/global/Sidebar';
 import { Team } from './scenes/team/Team';
 import { Form } from './scenes/form/Form';
+import { Calendar } from './scenes/calendar';
 
 
 export const App = () => {
@@ -22,6 +23,7 @@ export const App = () => {
 							<Route path="/" element={<Dashboard/>}/>
 							<Route path="/team" element={<Team/>}/>
 							<Route path="/form" element={<Form/>}/>
+							<Route path="/calendar" element={<Calendar/>}/>
 						</Routes>
 					</main>
 				</div>
